@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  background-color: grey;
+  min-height: 100vh;
+}
+
+.ocean {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/ocean.jpg");
+  background-size: cover;
+}
+
+.player,
+.enemy {
+  position: absolute;
+  height: 75px;
+  width: 70px;
+}
+
+.player {
+  z-index: 2;
+  background-image: url("./assets/player.png");
+}
+
+.enemy {
+  z-index: 2;
+  left: 300px;
+  top: 300px;
+  background-image: url("./assets/enemy.png");
+}
+
+.ultros {
+  position: absolute;
+  z-index: 1;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
+  background-image: url("./assets/Ultros.png");
+  background-repeat: no-repeat;
+}
+
+.missile {
+  position: absolute;
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px red solid;
+  background-color: yellow;
+}
